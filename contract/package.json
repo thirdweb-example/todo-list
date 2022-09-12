@@ -1,7 +1,11 @@
 {
-  "name": "hardhat-project",
+  "name": "todo-list-contract",
+  "scripts": {
+    "build": "npx thirdweb@latest detect",
+    "deploy": "npx thirdweb@latest deploy",
+    "release": "npx thirdweb@latest release"
+  },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
-    "hardhat": "^2.11.0"
+    "hardhat": "^2.10.1"
   }
 }
