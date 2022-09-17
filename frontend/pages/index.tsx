@@ -2,7 +2,7 @@ import {
   ConnectWallet,
   useAddress,
   useContract,
-  useContractData,
+  useContractRead,
   Web3Button,
 } from "@thirdweb-dev/react";
 import type { NextPage } from "next";
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   const contractAddress = "0x80ddA9989F272BFB1c53c1A100ff118Fd27dDb59";
   const [input, setInput] = useState("");
   const { contract } = useContract(contractAddress);
-  const { data, isLoading } = useContractData(contract, "getTodo");
+  const { data, isLoading } = useContractRead(contract, "getTodo");
 
   return (
     <div className={styles.container}>
